@@ -1,0 +1,26 @@
+{
+  "name": "rachelbruhn.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachelbruhn/rachelbruhn.github.io.git"
+  },
+  "author": "Jordan O'Leary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rachelbruhn/rachelbruhn.github.io/issues"
+  },
+  "homepage": "https://github.com/rachelbruhn/rachelbruhn.github.io#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.7.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}
