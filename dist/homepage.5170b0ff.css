@@ -1,0 +1,10 @@
+body {
+  background-image: url("background-texture.d7e58294.jpg"); }
+
+.content {
+  max-width: 800px;
+  width: 100%; }
+
+.content div {
+  outline: 1px solid blue;
+  min-height: 100px; }
