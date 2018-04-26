@@ -5,8 +5,42 @@ $base-spacing:30px;
 .content{
     max-width: 800px;
     width:100%;
+    margin:0 auto;
 }
 .content div {
     outline:1px solid blue;
-    min-height:100px;
+    min-height:38px;
+}
+.hero{
+    .embedded-video-container{
+        border:$base-spacing solid white;
+        iframe{
+            width:100%;
+            display:block;
+        }
+    }
+}
+.link-boxes{
+    display:flex;
+    .link{
+        width:100%;
+        background-size:contain;
+        background-repeat:no-repeat;
+        &.link-videos{
+            background-image:url('../assets/Text/videos.png');
+        }
+        &.link-images{
+            background-image:url('../assets/Text/images.png');
+        }
+        &.link-animations{
+            background-image:url('../assets/Text/animations.png');
+        }
+    }
+}
+.social-media{
+    display:flex;
+    justify-content: center;
+    img {
+        margin:$base-spacing/2;
+    }
 }
