@@ -3,8 +3,34 @@ body {
 
 .content {
   max-width: 800px;
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
 
 .content div {
   outline: 1px solid blue;
-  min-height: 100px; }
+  min-height: 38px; }
+
+.hero .embedded-video-container {
+  border: 30px solid white; }
+  .hero .embedded-video-container iframe {
+    width: 100%;
+    display: block; }
+
+.link-boxes {
+  display: flex; }
+  .link-boxes .link {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .link-boxes .link.link-videos {
+      background-image: url("videos.10ca5a6d.png"); }
+    .link-boxes .link.link-images {
+      background-image: url("images.e845c8a0.png"); }
+    .link-boxes .link.link-animations {
+      background-image: url("animations.4c4c0788.png"); }
+
+.social-media {
+  display: flex;
+  justify-content: center; }
+  .social-media img {
+    margin: 15px; }

@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({8:[function(require,module,exports) {
+})({9:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -107,7 +107,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],6:[function(require,module,exports) {
+},{}],7:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -138,17 +138,17 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":8}],5:[function(require,module,exports) {
+},{"./bundle-url":9}],6:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./..\\assets\\background-texture.jpg":[["background-texture.d7e58294.jpg",7],7],"_css_loader":6}],2:[function(require,module,exports) {
+},{"./..\\assets\\background-texture.jpg":[["background-texture.d7e58294.jpg",8],8],"./..\\assets\\Text\\videos.png":[["videos.10ca5a6d.png",5],5],"./..\\assets\\Text\\images.png":[["images.e845c8a0.png",30],30],"./..\\assets\\Text\\animations.png":[["animations.4c4c0788.png",31],31],"_css_loader":7}],2:[function(require,module,exports) {
 'use strict';
 
 require('./index.scss');
-},{"./index.scss":5}],9:[function(require,module,exports) {
+},{"./index.scss":6}],39:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -178,7 +178,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '57843' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '64395' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -317,5 +317,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[9,2])
+},{}]},{},[39,2])
 //# sourceMappingURL=/homepage.5170b0ff.map
