@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({9:[function(require,module,exports) {
+})({20:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -107,7 +107,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],7:[function(require,module,exports) {
+},{}],11:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -138,17 +138,27 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":9}],6:[function(require,module,exports) {
+},{"./bundle-url":20}],10:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./..\\assets\\background-texture.jpg":[["background-texture.d7e58294.jpg",8],8],"./..\\assets\\Text\\videos.png":[["videos.10ca5a6d.png",5],5],"./..\\assets\\Text\\images.png":[["images.e845c8a0.png",30],30],"./..\\assets\\Text\\animations.png":[["animations.4c4c0788.png",31],31],"_css_loader":7}],2:[function(require,module,exports) {
+},{"./..\\assets\\background-texture.jpg":[["background-texture.d7e58294.jpg",12],12],"./..\\assets\\Images\\design.png":[["design.b196d476.png",13],13],"./..\\assets\\Images\\videos-bw.png":[["videos-bw.345176a0.png",56],56],"./..\\assets\\Images\\videos.png":[["videos.f8b35c6b.png",15],15],"./..\\assets\\Images\\images-bw.png":[["images-bw.5d4894c1.png",57],57],"./..\\assets\\Images\\images.png":[["images.5bf4093d.png",17],17],"./..\\assets\\Images\\animations-bw.png":[["animations-bw.e20ef534.png",58],58],"./..\\assets\\Images\\animations.png":[["animations.38885cb9.png",19],19],"_css_loader":11}],2:[function(require,module,exports) {
 'use strict';
 
 require('./index.scss');
-},{"./index.scss":6}],39:[function(require,module,exports) {
+
+$(function () {
+    $('.link').click(function () {
+        var content = $(this).data('content');
+        if (content) {
+            $('.content').removeClass('visible');
+            $('.content--' + content).addClass('visible');
+        }
+    });
+});
+},{"./index.scss":10}],60:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -178,7 +188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '64395' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '62581' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -317,5 +327,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[39,2])
+},{}]},{},[60,2])
 //# sourceMappingURL=/homepage.5170b0ff.map

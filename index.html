@@ -7,10 +7,9 @@
     <title>Rachel Bruhn</title>
 </head>
 <body>
-    <script src="./homepage/index.js"></script> 
-    <div class="content">
+    <main>
         <div class="header">
-            <img src="assets/Text/signature.png" alt=""> 
+            <img class="signature" src="assets/Text/signature.png" alt=""> 
             <img src="assets/Text/email.png" alt=""> 
         </div>
         <div class="hero">
@@ -19,11 +18,21 @@
             </div>
         </div>
         <div class="link-boxes">
-            <div class="link link-videos"></div>
-            <div class="link link-images"></div>
-            <div class="link link-animations"></div>
+            <div class="link link-videos" data-content="videos"></div>
+            <div class="link link-images" data-content="images"></div>
+            <div class="link link-animations" data-content="animations"></div>
         </div>
-        TODO: LINKS TO SOCIAL MEDIA
+        <div class="content__holder">
+            <div class="content content--videos">
+                TODO vids
+            </div>
+            <div class="content content--images">
+                TODO images
+            </div>
+            <div class="content content--animations">
+                TODO animations
+            </div>
+        </div>
         <div class="social-media">
             <a href="https://www.instagram.com/cup_of_creativetea/"><img src="assets/Icons/Instagram-BW.png" alt=""></a>
             <a href="https://www.youtube.com/channel/UCUN3nJcHUiEa5D158pG-9ow/videos"><img src="assets/Icons/Youtube-BW.png" alt=""></a>
@@ -32,5 +41,10 @@
             <a href="https://www.flickr.com/photos/138055542@N06"><img src="assets/Icons/Flickr-BW.png" alt=""></a>
         </div>
     </div>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+    <script src="./homepage/index.js"></script> 
 </body>
 </html>
