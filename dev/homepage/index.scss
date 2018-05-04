@@ -104,3 +104,18 @@ main{
         display:block;
     }
 }
+
+.icon{
+    img:nth-child(2){
+        display:none;
+    }
+    &--color {
+        img:nth-child(1){
+            display:none;
+        }
+        img:nth-child(2){
+            display:block;
+        }
+
+    }
+}
