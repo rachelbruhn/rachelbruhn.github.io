@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({20:[function(require,module,exports) {
+})({47:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -107,7 +107,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],11:[function(require,module,exports) {
+},{}],38:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -138,13 +138,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":20}],10:[function(require,module,exports) {
+},{"./bundle-url":47}],27:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./..\\assets\\background-texture.jpg":[["background-texture.d7e58294.jpg",12],12],"./..\\assets\\Images\\design.png":[["design.b196d476.png",13],13],"./..\\assets\\Images\\videos-bw.png":[["videos-bw.345176a0.png",56],56],"./..\\assets\\Images\\videos.png":[["videos.f8b35c6b.png",15],15],"./..\\assets\\Images\\images-bw.png":[["images-bw.5d4894c1.png",57],57],"./..\\assets\\Images\\images.png":[["images.5bf4093d.png",17],17],"./..\\assets\\Images\\animations-bw.png":[["animations-bw.e20ef534.png",58],58],"./..\\assets\\Images\\animations.png":[["animations.38885cb9.png",19],19],"_css_loader":11}],2:[function(require,module,exports) {
+},{"./..\\assets\\background-texture.jpg":[["background-texture.1c258b3f.jpg",39],39],"./..\\assets\\Images\\design.png":[["design.022f4afc.png",40],40],"./..\\assets\\Images\\videos-bw.png":[["videos-bw.b277fe83.png",43],43],"./..\\assets\\Images\\videos.png":[["videos.3e9a356c.png",42],42],"./..\\assets\\Images\\images-bw.png":[["images-bw.1af5a4f4.png",41],41],"./..\\assets\\Images\\images.png":[["images.f004ebc2.png",44],44],"./..\\assets\\Images\\animations-bw.png":[["animations-bw.51a68844.png",45],45],"./..\\assets\\Images\\animations.png":[["animations.e5137240.png",46],46],"_css_loader":38}],11:[function(require,module,exports) {
 'use strict';
 
 require('./index.scss');
@@ -155,10 +155,18 @@ $(function () {
         if (content) {
             $('.content').removeClass('visible');
             $('.content--' + content).addClass('visible');
+
+            // Manage icon color based on which content type is selected:
+            var colorIcons = $(this).data('color-icons').split(',');
+            $('.icon').removeClass('icon--color');
+            for (var i = 0; i < colorIcons.length; i++) {
+                var iconName = colorIcons[i];
+                $('.icon.icon--' + iconName).addClass('icon--color');
+            }
         }
     });
 });
-},{"./index.scss":10}],60:[function(require,module,exports) {
+},{"./index.scss":27}],58:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -188,7 +196,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '62581' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59309' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -327,5 +335,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[60,2])
-//# sourceMappingURL=/homepage.5170b0ff.map
+},{}]},{},[58,11])
+//# sourceMappingURL=/homepage.2d6272fe.map
