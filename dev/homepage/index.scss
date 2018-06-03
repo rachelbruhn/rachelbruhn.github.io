@@ -90,9 +90,26 @@ main{
     @include centeredArticle();
 }
 .content{
+    color:white;
     display:none;
     &.visible{
         display:block;
+    }
+    &--about .resume{
+        color:white;
+        font-size:22px;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    &--videos {
+        .iframe-holder {
+            display:flex;
+            flex-wrap:wrap;
+            iframe {
+                width:50%;
+            }
+        }
     }
 }
 
