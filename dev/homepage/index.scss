@@ -58,30 +58,21 @@ main{
     width:100%;
     margin-bottom:$base-spacing;
     .link{
-        background-size:cover;
-        background-repeat:no-repeat;
-        background-position:center;
+        > img {
+            max-width: 100%
+        }
         cursor: pointer;
-        width:28%;
-        height:135px;
-        border:$base-spacing/3 solid white;
-        &.link-videos{
-            background-image:url('../assets/Images/videos-bw.png');
-            &:hover {
-                background-image:url('../assets/Images/videos.png');
-            }
+        > img:nth-child(2) {
+            display:none;
         }
-        &.link-images{
-            background-image:url('../assets/Images/images-bw.png');
-            &:hover {
-                background-image:url('../assets/Images/images.png');
+        &:hover{
+            > img:nth-child(1) {
+                display:none;
             }
-        }
-        &.link-animations{
-            background-image:url('../assets/Images/animations-bw.png');
-            &:hover {
-                background-image:url('../assets/Images/animations.png');
+            > img:nth-child(2) {
+                display:block;
             }
+            
         }
     }
 }
